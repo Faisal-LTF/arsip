@@ -15,15 +15,15 @@ if (!isset($_SESSION['nama'])) {
 ?>
 
 <div class="container-fluid px-2 px-md-4">
-    <div class="page-header min-height-300 border-radius-xl mt-4"
-        style="background-image: url('https://i.ytimg.com/vi/bd4ENPsn8BI/maxresdefault.jpg');">
+<div class="page-header min-height-300 border-radius-xl mt-4"
+        style="background-image: url('https://images.unsplash.com/photo-1597380281502-80858032f5bd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
         <span class="mask  bg-gradient-aev  opacity-3"></span>
     </div>
     <div class="card card-body mx-3 mx-md-4 mt-n6">
         <div class="row gx-4">
             <div class="col-auto">
                 <div class="avatar avatar-xl position-relative">
-                    <img src="<?php echo "../image/bjm.png" ?>" alt="profile_image" class="w-100 pt-3">
+                    <img src="<?php echo "../image/brt2.png" ?>" alt="profile_image" class="w-100 pt-3">
                 </div>
             </div>
             <div class="col-auto my-auto">
