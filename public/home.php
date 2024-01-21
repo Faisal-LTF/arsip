@@ -21,8 +21,6 @@ if (!isset($_SESSION['nama'])) {
 
             if ($level === '0') {
                 include "../public/dashboard.php";
-            } elseif ($level === '1') {
-                include "../public/dashboard-pegawai.php";
             } elseif ($level === '2') {
                 include "../public/dashboard-masyarakat.php";
             } elseif ($level === '3') {
@@ -33,7 +31,6 @@ if (!isset($_SESSION['nama'])) {
 
             /////////////////////////////////////////////// START ADMIN PAGE
         
-
             // PEGAWAI
         case "data_pegawai";
             include "../pages/admin/pegawai/data.php";
@@ -80,7 +77,7 @@ if (!isset($_SESSION['nama'])) {
             include "../pages/admin/masyarakat/detail.php";
             break;
         case "edit_masyarakat";
-            include "../apages/dmin/masyarakat/edit.php";
+            include "../pages/admin/masyarakat/edit.php";
             break;
         case "hapus_masyarakat";
             include "../pages/admin/masyarakat/delete.php";
@@ -141,7 +138,22 @@ if (!isset($_SESSION['nama'])) {
 
 
             ///////////////////////////////////////////////////////////// START MASYARAKAT PAGE------------------
-        //   ??????
+        // MASYARAKAT
+        case "dataMasyarakat";
+            include "../pages/masyarakat/data-masyarakat/data.php";
+            break;
+        case "tambahMasyarakat";
+            include "../pages/masyarakat/data-masyarakat/add.php";
+            break;
+        case "editMasyarakat";
+            include "../pages/masyarakat/data-masyarakat/edit.php";
+            break;
+        case "hapusMasyarakat";
+            include "../pages/masyarakat/data-masyarakat/delete.php";
+            break;
+            case "detailMasyarakat";
+            include "../pages/masyarakat/data-masyarakat/detail.php";
+            break;
             /////////////////////////////////////////////////////////////////END PAGE MASYARAKAT --------
 
             ///////////START PAGE CAMAT---------------------

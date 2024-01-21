@@ -22,71 +22,13 @@ function tgl($tanggal)
 ?>
 <div class="container-fluid py-2">
     <h4 class="text-center">
-        Halaman Dashboard Aplikasi Kecamatan Banjarmasin Timur
+        Halaman Dashboard Aplikasi Kecamatan Mandastana
     </h4>
     <div class="row mt-2 align-items-center">
-        <div class="border-radius-lg col-lg-8">
-            <div class="card z-index-2">
-                <div class="card-header pb-0 mb-3">
-                    <h6 class="text-center">Kegiatan Terbaru Kecamatan Banjarmasin Timur</h6>
-                    <p class="text-sm ">
-                        <i></i>
-                    </p>
-                </div>
-            </div>
-            <div class="row align-items-stretch">
-                <?php
-                $no = 1;
-                $query = mysqli_query($link, "SELECT * FROM news order by tanggal DESC LIMIT 4 ");
-                $i = 1;
-                while ($row = $query->fetch_array()) {
-
-                ?>
-                <div class="col-lg-4 mb-lg-0 mb-2">
-                    <div class="card z-index-2 mt-4 mb-4">
-                        <div class="card-body  mt-n5 px-2">
-                            <div class="border-radius-lg py-1 pe-1 mb-3 ">
-                                <div class="text-center border-radius-lg mt-n4">
-                                    <?php echo "<img src='../aev/$row[foto]' width='102%'; height='160' style='border-radius: 5%; box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),0 7px 10px -5px rgba(64, 64, 64, 0.4) ; ' />"; ?>
-                                </div>
-                            </div>
-                            <h6 class="ms-2 mt-2 mb-0 px-1"><?php
-                                                                $newsText = $row['title'];
-                                                                $maxtitle = 25; // Tentukan panjang maksimum yang diinginkan
-                                                                if (strlen($newsText) > $maxtitle) {
-                                                                    $trimmedText = substr($newsText, 0, $maxtitle) . ' ...';
-                                                                    echo $trimmedText;
-                                                                } else {
-                                                                    echo $newsText;
-                                                                }
-                                                                ?></h6>
-                            <p class="text-sm ms-2 ">
-                                <span class="date"><?= tgl($row['tanggal']) ?></span>
-
-                            </p>
-                            <p class="px-1 text-justify"> <?php
-                                                                $newsText = $row['newsText'];
-                                                                $maxLength = 89; // Tentukan panjang maksimum yang diinginkan
-                                                                if (strlen($newsText) > $maxLength) {
-                                                                    $trimmedText = substr($newsText, 0, $maxLength) . ' ...';
-                                                                    echo $trimmedText;
-                                                                } else {
-                                                                    echo $newsText;
-                                                                }
-                                                                ?>.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <?php
-                }
-                ?>
-            </div>
-        </div>
         <div class="col-lg-4 col-md-4">
             <div class="card h-100  mb-4">
                 <div class="card-header   pb-0">
-                    <h6 align="center">PELAYANAN ADMINISTRASI TERPADU KECAMATAN BANJARMASIN TIMUR</h6>
+                    <h6 align="center">KECAMATAN MANDASTANA</h6>
 
                     <i class="fa fa-check text-info" aria-hidden="true"></i>
                     <span class="font-weight-bold"></span> Visi - Misi
