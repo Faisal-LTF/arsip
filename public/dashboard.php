@@ -1,53 +1,5 @@
 <?php
 
-$sbp = mysqli_query($link, "SELECT COUNT(*) AS total FROM skp where nilai_prestasi_kerja between  80 and 100   ");
-$hitungsbp = mysqli_fetch_array($sbp);
-
-$bp = mysqli_query($link, "SELECT COUNT(*) AS total FROM skp where nilai_prestasi_kerja between   70 and 79  ");
-$hitungbp = mysqli_fetch_array($bp);
-
-$cp = mysqli_query($link, "SELECT COUNT(*) AS total FROM skp where nilai_prestasi_kerja between   60 and 69  ");
-$hitungc = mysqli_fetch_array($cp);
-
-$kp = mysqli_query($link, "SELECT COUNT(*) AS total FROM skp where nilai_prestasi_kerja between   40 and 59  ");
-$hitungkp = mysqli_fetch_array($kp);
-
-$brkp = mysqli_query($link, "SELECT COUNT(*) AS total FROM skp where nilai_prestasi_kerja between   0 and 39  ");
-$hitungbrkp = mysqli_fetch_array($brkp);
-
-$skpkec = mysqli_query($link, "SELECT COUNT(*) AS total FROM skpkecamatan ");
-$hitungskpkec = mysqli_fetch_array($skpkec);
-
-$spn = mysqli_query($link, "SELECT COUNT(*) AS total FROM spn ");
-$hitungspn = mysqli_fetch_array($spn);
-
-$sktm = mysqli_query($link, "SELECT COUNT(*) AS total FROM sktm ");
-$hitungsktm = mysqli_fetch_array($sktm);
-
-$sk = mysqli_query($link, "SELECT COUNT(*) AS total FROM s_keluarga ");
-$hitungsk = mysqli_fetch_array($sk);
-
-$rdn = mysqli_query($link, "SELECT COUNT(*) AS total FROM rdn ");
-$hitungrdn = mysqli_fetch_array($rdn);
-
-$lp = mysqli_query($link, "SELECT COUNT(*) AS total FROM proposal ");
-$hitunglp = mysqli_fetch_array($lp);
-
-$sb = mysqli_query($link, "SELECT COUNT(*) AS total FROM skpkecamatan where nilai_prestasi_kerja between  80 and 100   ");
-$hitungsb = mysqli_fetch_array($sb);
-
-$b = mysqli_query($link, "SELECT COUNT(*) AS total FROM skpkecamatan where nilai_prestasi_kerja between   70 and 79  ");
-$hitungb = mysqli_fetch_array($b);
-
-$c = mysqli_query($link, "SELECT COUNT(*) AS total FROM skpkecamatan where nilai_prestasi_kerja between   60 and 69  ");
-$hitungc = mysqli_fetch_array($c);
-
-$k = mysqli_query($link, "SELECT COUNT(*) AS total FROM skpkecamatan where nilai_prestasi_kerja between   40 and 59  ");
-$hitungk = mysqli_fetch_array($k);
-
-$brk = mysqli_query($link, "SELECT COUNT(*) AS total FROM skpkecamatan where nilai_prestasi_kerja between   0 and 39  ");
-$hitungbrk = mysqli_fetch_array($brk);
-
 
 function tgl($tanggal)
 {
@@ -87,7 +39,7 @@ function tgl($tanggal)
                     </div>
                     <div class="text-end pt-1">
                         <p class="text-sm mb-0 text-capitalize">Data Susunan Keluarga</p>
-                        <h4 class="mb-0"> <a href="?page=data_susunanKeluarga"><?php echo $hitungsk['total'] ?></a>
+                        <h4 class="mb-0"> <a href="?page=data_susunanKeluarga"><?php echo $hitungsk[''] ?></a>
                         </h4>
                     </div>
                 </div>
@@ -106,7 +58,7 @@ function tgl($tanggal)
                     </div>
                     <div class="text-end pt-1">
                         <p class="text-sm mb-0 text-capitalize"> Data Surat Pengantar Nikah</p>
-                        <h4 class="mb-0"><a href="?page=data_pengantarNikah"><?php echo $hitungspn['total']; ?></a>
+                        <h4 class="mb-0"><a href="?page=data_pengantarNikah"><?php echo $hitungspn['']; ?></a>
                         </h4>
                     </div>
                 </div>
@@ -125,7 +77,7 @@ function tgl($tanggal)
                     </div>
                     <div class="text-end pt-1">
                         <p class="text-sm mb-0 text-capitalize">Data Legalisasi Surat Keterangan Tidak Mampu</p>
-                        <h4 class="mb-0"><a href="?page=data_sktm"><?php echo $hitungsktm['total'] ?></a></h4>
+                        <h4 class="mb-0"><a href="?page=data_sktm"><?php echo $hitungsktm[''] ?></a></h4>
                     </div>
                 </div>
                 <hr class="dark horizontal my-0">
@@ -145,7 +97,7 @@ function tgl($tanggal)
                     </div>
                     <div class="text-end pt-1">
                         <p class="text-sm mb-0 text-capitalize">Data Rekomendasi Dispensasi Nikah</p>
-                        <h4 class="mb-0"><a href="?page=data_dispensasiNikah"><?php echo $hitungrdn['total']; ?></a>
+                        <h4 class="mb-0"><a href="?page=data_dispensasiNikah"><?php echo $hitungrdn['']; ?></a>
                         </h4>
                     </div>
                 </div>
@@ -164,7 +116,7 @@ function tgl($tanggal)
                     </div>
                     <div class="text-end pt-1">
                         <p class="text-sm mb-0 text-capitalize">Data Legalisasi Proposal</p>
-                        <h4 class="mb-0"><a href="?page=data_proposal"><?php echo $hitunglp['total']; ?></a></h4>
+                        <h4 class="mb-0"><a href="?page=data_proposal"><?php echo $hitunglp['']; ?></a></h4>
                     </div>
                 </div>
                 <hr class="dark horizontal my-0">
@@ -177,13 +129,13 @@ function tgl($tanggal)
     <div class="row mt-4">
         <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
             <div class="card">
-                <div class="card-header pb-0">
+                <!-- <div class="card-header pb-0">
                     <div class="row">
                         <div class="col-lg-12 col-12">
                             <h6 align="center">Data Penilaian Kinerja Pelayanan Dari Masyarakat</h6>
                             <p class="text-sm mb-0">
                                 <i class="fa fa-check text-info" aria-hidden="true"></i>
-                                <span class="font-weight-bold ms-1"> Total : <?php echo $hitungskpkec['total'] ?></span>
+                                <span class="font-weight-bold ms-1"> Total : <?php echo $hitungskpkec[''] ?></span>
                             </p>
                         </div>
                     </div>
@@ -251,10 +203,10 @@ function tgl($tanggal)
 
                         </table>
                     </div>
-                </div>
+                </div>  -->
             </div>
         </div>
-        <div class="col-lg-4 col-md-10">
+        <!-- <div class="col-lg-4 col-md-10">
             <div class="card h-100">
                 <div class="card-header pb-0">
                     <h6 align="center">PELAYANAN ADMINISTRASI TERPADU KECAMATAN BANJARMASIN TIMUR</h6>
@@ -292,10 +244,10 @@ function tgl($tanggal)
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-12 col-md-6">
             <div class="card mt-3">
                 <div class="card-header mb-xl- pb-0">
@@ -358,7 +310,7 @@ function tgl($tanggal)
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 </div>
 

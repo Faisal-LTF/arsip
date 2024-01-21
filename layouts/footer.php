@@ -6,7 +6,7 @@
                     © <script>
                     document.write(new Date().getFullYear())
                     </script></i> by
-                    Annisa Yuliani | Skripsi Pelayanan.
+                    Irmayati | E-Arsip Kecamatan Mandastana.
                 </div>
             </div>
             <div class="col-lg-6">
@@ -36,10 +36,10 @@
 </script>
 
 <!--   Core JS Files   -->
-<script src="/aev/assets/js/core/popper.min.js"></script>
-<script src="/aev/assets/js/core/bootstrap.min.js"></script>
-<script src="/aev/assets/js/plugins/perfect-scrollbar.min.js"></script>
-<script src="/aev/assets/js/plugins/smooth-scrollbar.min.js"></script>
+<script src="/e-arsip/assets/js/core/popper.min.js"></script>
+<script src="/e-arsip/assets/js/core/bootstrap.min.js"></script>
+<script src="/e-arsip/assets/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="/e-arsip/assets/js/plugins/smooth-scrollbar.min.js"></script>
 
 
 
@@ -110,8 +110,9 @@ $(document).ready(function() {
 <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
 
 
-<script src="/aev/assets/js/material-dashboard.min.js?v=3.0.4"></script>
+<script src="/e-arsip/assets/js/material-dashboard.min.js?v=3.0.4"></script>
 
+<script src="../../assets/js/modal-enable-otp.js"></script>
 
 <!-- // JAVASCRIPT ONLINE // <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

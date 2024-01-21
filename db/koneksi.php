@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$DB = "db_pelayanan";
+$DB = "db_e_arsip";
 
 // $host = "localhost";
 // $user = "id20838662_aev";

@@ -3,7 +3,7 @@
 session_start();
 if (!isset($_SESSION['nama'])) {
     echo "<script> alert('Silahkan login terlebih dahulu'); </script>";
-    echo "<meta http-equiv='refresh' content='0; url=../aev/index.php'>";
+    echo "<meta http-equiv='refresh' content='0; url=../e-arsip/index.php'>";
 } else {
 
     include '../layouts/header.php';
@@ -32,19 +32,7 @@ if (!isset($_SESSION['nama'])) {
 
 
             /////////////////////////////////////////////// START ADMIN PAGE
-            //PORTAL BERITA
-        case "data_berita";
-            include "../pages/admin/news/data.php";
-            break;
-        case "tambah_berita";
-            include "../pages/admin/news/add.php";
-            break;
-        case "edit_berita";
-            include "../pages/admin/news/edit.php";
-            break;
-        case "hapus_berita";
-            include "../pages/admin/news/delete.php";
-            break;
+        
 
             // PEGAWAI
         case "data_pegawai";
@@ -79,16 +67,7 @@ if (!isset($_SESSION['nama'])) {
             include "../pages/admin/golongan/delete.php";
             break;
 
-            // JABATAN
-        case "data_jabatan";
-            include "../pages/admin/jabatan/data.php";
-            break;
-        case "edit_jabatan";
-            include "../pages/admin/jabatan/edit.php";
-            break;
-        case "hapus_jabatan";
-            include "../pages/admin/jabatan/delete.php";
-            break;
+        
 
             // MASYARAKAT
         case "data_masyarakat";
@@ -123,95 +102,7 @@ if (!isset($_SESSION['nama'])) {
         case "hapus_user";
             include "../pages/admin/user/delete.php";
             break;
-
-            //LEGALISASI PROPOSAL
-        case "data_proposal":
-            include "../pages/admin/legalisasi-proposal/data.php";
-            break;
-        case "edit_proposal":
-            include "../pages/admin/legalisasi-proposal/edit.php";
-            break;
-
-            //LEGALISASI SKTM
-        case "data_sktm":
-            include "../pages/admin/surat-keterangan-tidak-mampu/data.php";
-            break;
-        case "edit_sktm":
-            include "../pages/admin/surat-keterangan-tidak-mampu/edit.php";
-            break;
-
-            //Legalisasi Susunan Keluarga
-        case "data_susunanKeluarga";
-            include "../pages/admin/legalisasi-susunan-keluarga/data.php";
-            break;
-        case "edit_susunanKeluarga";
-            include "../pages/admin/legalisasi-susunan-keluarga/edit.php";
-            break;
-            //Legalisasi Pengantar Nikah
-        case "data_pengantarNikah";
-            include "../pages/admin/legalisasi-pengantar-nikah/data.php";
-            break;
-        case "edit_pengantarNikah";
-            include "../pages/admin/legalisasi-pengantar-nikah/edit.php";
-            break;
-            //Rekomendasi Dispenasi Nikah
-        case "data_dispensasiNikah";
-            include "../pages/admin/dispensasi-nikah/data.php";
-            break;
-        case "edit_dispensasiNikah";
-            include "../pages/admin/dispensasi-nikah/edit.php";
-            break;
-
-            //SURAT REKOMENDASI DISPENSASI NIKAH
-        case "data_SuratDispensasiNikah":
-            include "../pages/admin/surat-dispensasi-nikah/data.php";
-            break;
-        case "hapus_SuratDispensasiNikah":
-            include "../pages/admin/surat-dispensasi-nikah/delete.php";
-            break;
-
-            // PENILAIAN KINERJA PEGAWAI
-        case "data_KinerjaPegawai":
-            include "../pages/admin/kinerja-pegawai/data.php";
-            break;
-        case "tambah_KinerjaPegawai":
-            include "../pages/admin/kinerja-pegawai/add.php";
-            break;
-        case "edit_KinerjaPegawai":
-            include "../pages/admin/kinerja-pegawai/edit.php";
-            break;
-        case "hapus_KinerjaPegawai":
-            include "../pages/admin/kinerja-pegawai/delete.php";
-            break;
-
-            // PENILAIAN KINERJA KECAMATAN
-        case "data_kinerjaKecamatan":
-            include "../pages/admin/kinerja-kecamatan/data.php";
-            break;
-        case "hapus_kinerjaKecamatan":
-            include "../pages/admin/kinerja-kecamatan/delete.php";
-            break;
-
-            //     //PERJALANAN DINAS
-            // case "data_perjalananDinas";
-            //     include "../pages/admin/perjalanan-dinas/data.php";
-            //     break;
-            // case "hapus_perjalananDinas";
-            //     include "../pages/admin/perjalanan-dinas/delete.php";
-            //     break;
-
-            //SURAY PERJALANAN DINAS
-        case "data_suratPerjalananDinas";
-            include "../pages/admin/surat-perjalanan-dinas/data.php";
-            break;
-        case "tambah_suratPerjalananDinas";
-            include "../pages/admin/surat-perjalanan-dinas/add.php";
-            break;
-        case "edit_suratPerjalananDinas";
-            include "../pages/admin/surat-perjalanan-dinas/edit.php";
-            break;
-        case "hapus_suratPerjalananDinas";
-            include "../pages/admin/surat-perjalanan-dinas/delete.php";
+"../pages/admin/surat-perjalanan-dinas/delete.php";
             break;
             //////////////////////////////////////////////////////////////////////// END ADMIN PAGE -----------
 
@@ -230,26 +121,7 @@ if (!isset($_SESSION['nama'])) {
         case "hapusPegawai";
             include "../pages/other/pegawai/delete.php";
             break;
-
-            //PERJALANAN DINAS
-        case "dataPerjalananDinas";
-            include "../pages/other/perjalanan-dinas/data.php";
-            break;
-            // case "tambahPerjalananDinas";
-            //     include "../pages/other/perjalanan-dinas/add.php";
-            //     break;
-            // case "editPerjalananDinas";
-            //     include "../pages/other/perjalanan-dinas/edit.php";
-            //     break;
-            // case "hapusPerjalananDinas";
-            //     include "../pages/other/perjalanan-dinas/delete.php";
-            //     break;
-
-            // PENILAIAN KINERJA PEGAWAI
-        case "dataKinerjaPegawai":
-            include "../pages/other/kinerja-pegawai/data.php";
-            break;
-
+        
             // USERS
         case "dataUser";
             include "../pages/other/user/data.php";
@@ -266,223 +138,14 @@ if (!isset($_SESSION['nama'])) {
 
             ///////////////////////////////////////////////////////////////// END PEGAWAI PAGE ---------
 
+
+
             ///////////////////////////////////////////////////////////// START MASYARAKAT PAGE------------------
-            // MASYARAKAT
-        case "dataMasyarakat";
-            include "../pages/other/masyarakat/data.php";
-            break;
-        case "tambahMasyarakat";
-            include "../pages/other/masyarakat/add.php";
-            break;
-        case "editMasyarakat";
-            include "../pages/other/masyarakat/edit.php";
-            break;
-        case "hapusMasyarakat";
-            include "../pages/other/masyarakat/delete.php";
-            break;
-        case "detailMasyarakat";
-            include "../pages/other/masyarakat/detail.php";
-            break;
-            //END MASYARAKAT PAGE
-
-            //LEGALISASI SUSUNAN KELUARGA
-        case "dataSusunanKeluarga";
-            include "../pages/other/legalisasi-susunan-keluarga/data.php";
-            break;
-        case "tambahSusunanKeluarga";
-            include "../pages/other/legalisasi-susunan-keluarga/add.php";
-            break;
-        case "editSusunanKeluarga";
-            include "../pages/other/legalisasi-susunan-keluarga/edit.php";
-            break;
-        case "hapusSusunanKeluarga";
-            include "../pages/other/legalisasi-susunan-keluarga/delete.php";
-            break;
-            //END LEGALISASI SUSUNAN KELUARGA
-
-            //SURAT KETERANGAN TIDAK MAMPU
-        case "dataSktm":
-            include "../pages/other/surat-keterangan-tidak-mampu/data.php";
-            break;
-        case "tambahSktm":
-            include "../pages/other/surat-keterangan-tidak-mampu/add.php";
-            break;
-        case "editSktm":
-            include "../pages/other/surat-keterangan-tidak-mampu/edit.php";
-            break;
-        case "hapusSktm":
-            include "../pages/other/surat-keterangan-tidak-mampu/delete.php";
-            break;
-            //END SURAT KETERANGAN TIDAK MAMPU
-
-            //LEGALISASI PROPOSAL   
-        case "dataProposal":
-            include "../pages/other/legalisasi-proposal/data.php";
-            break;
-        case "tambahProposal":
-            include "../pages/other/legalisasi-proposal/add.php";
-            break;
-        case "editProposal":
-            include "../pages/other/legalisasi-proposal/edit.php";
-            break;
-        case "hapusProposal":
-            include "../pages/other/legalisasi-proposal/delete.php";
-            break;
-
-            //LEGALISASI SURAT PENGANTAR NIKAH 
-        case "dataSuratPengantarNikah":
-            include "../pages/other/legalisasi-pengantar-nikah/data.php";
-            break;
-        case "tambahSuratPengantarNikah":
-            include "../pages/other/legalisasi-pengantar-nikah/add.php";
-            break;
-        case "editSuratPengantarNikah":
-            include "../pages/other/legalisasi-pengantar-nikah/edit.php";
-            break;
-        case "hapusSuratPengantarNikah":
-            include "../pages/other/legalisasi-pengantar-nikah/delete.php";
-            break;
-
-            //REKOMENDASI DISPENSASI NIKAH
-        case "dataDispensasiNikah":
-            include "../pages/other/dispensasi-nikah/data.php";
-            break;
-        case "tambahDispensasiNikah":
-            include "../pages/other/dispensasi-nikah/add.php";
-            break;
-        case "editDispensasiNikah":
-            include "../pages/other/dispensasi-nikah/edit.php";
-            break;
-        case "hapusDispensasiNikah":
-            include "../pages/other/dispensasi-nikah/delete.php";
-            break;
-
-            //SURAT REKOMENDASI DISPENSASI NIKAH
-        case "dataSuratDispensasiNikah":
-            include "../pages/other/surat-dispensasi-nikah/data.php";
-            break;
-        case "tambahSuratDispensasiNikah":
-            include "../pages/other/surat-dispensasi-nikah/add.php";
-            break;
-        case "editSuratDispensasiNikah":
-            include "../pages/other/surat-dispensasi-nikah/edit.php";
-            break;
-        case "hapusSuratDispensasiNikah":
-            include "../pages/other/surat-dispensasi-nikah/delete.php";
-            break;
-
-            // PENILAIAN KINERJA KECAMATAN
-        case "dataKinerjaKecamatan":
-            include "../pages/other/kinerja-kecamatan/data.php";
-            break;
-        case "tambahKinerjaKecamatan":
-            include "../pages/other/kinerja-kecamatan/add.php";
-            break;
-        case "editKinerjaKecamatan":
-            include "../pages/other/kinerja-kecamatan/edit.php";
-            break;
-        case "hapusKinerjaKecamatan":
-            include "../pages/other/kinerja-kecamatan/delete.php";
-            break;
+        //   ??????
             /////////////////////////////////////////////////////////////////END PAGE MASYARAKAT --------
 
             ///////////START PAGE CAMAT---------------------
-            //LEGALISASI PROPOSAL
-        case "dProposal":
-            include "../pages/camat/legalisasi-proposal/data.php";
-            break;
-        case "eProposal":
-            include "../pages/camat/legalisasi-proposal/edit.php";
-            break;
-            //LEGALISASI SURAT KETERANGAN TIDAK MAMPU
-        case "dSktm":
-            include "../pages/camat/surat-keterangan-tidak-mampu/data.php";
-            break;
-        case "eSktm":
-            include "../pages/camat/surat-keterangan-tidak-mampu/edit.php";
-            break;
-            //LEGALISASI SURAT PENGANTAR NIKAH
-        case "dPengantarNikah":
-            include "../pages/camat/legalisasi-pengantar-nikah/data.php";
-            break;
-        case "ePengantarNikah":
-            include "../pages/camat/legalisasi-pengantar-nikah/edit.php";
-            break;
-            //LEGALISASI DISPENSASI NIKAH
-        case "dDispensasiNikah":
-            include "../pages/camat/dispensasi-nikah/data.php";
-            break;
-        case "eDispensasiNikah":
-            include "../pages/camat/dispensasi-nikah/edit.php";
-            break;
-
-            //LEGALISASI SUSUNAN KELUARGA
-        case "dSusunanKeluarga":
-            include "../pages/camat/legalisasi-susunan-keluarga/data.php";
-            break;
-        case "eSusunanKeluarga":
-            include "../pages/camat/legalisasi-susunan-keluarga/edit.php";
-            break;
-
-            // PENILAIAN KINERJA PEGAWAI
-        case "dKinerjaPegawai":
-            include "../pages/camat/kinerja-pegawai/data.php";
-            break;
-        case "eKinerjaPegawai":
-            include "../pages/camat/kinerja-pegawai/edit.php";
-            break;
-
-            //////////// QRCODE PREVIEW //////////////////////
-            ## QRCODE LEGALISASI PROPOSAL
-        case "qrCodeProposal":
-            include "../pages/camat/qrcode-proposal/data.php";
-            break;
-        case "tambah_qrProposal":
-            include "../pages/camat/qrcode-proposal/add.php";
-            break;
-        case "hapus_qrProposal":
-            include "../pages/camat/qrcode-proposal/delete.php";
-            break;
-            ## QRCODE LEGALISASI SKTM
-        case "qrCodeSktm":
-            include "../pages/camat/qrcode-sktm/data.php";
-            break;
-        case "tambah_qrSktm":
-            include "../pages/camat/qrcode-sktm/add.php";
-            break;
-        case "hapus_qrSktm":
-            include "../pages/camat/qrcode-sktm/delete.php";
-            break;
-            ## QRCODE LEGALISASI PENGANTAR NIKAH
-        case "qrCodeSpn":
-            include "../pages/camat/qrcode-spn/data.php";
-            break;
-        case "tambah_qrSpn":
-            include "../pages/camat/qrcode-spn/add.php";
-            break;
-        case "hapus_qrSpn":
-            include "../pages/camat/qrcode-spn/delete.php";
-            break;
-            ## QRCODE LEGALISASI PENGANTAR NIKAH
-        case "qrCodeSk":
-            include "../pages/camat/qrcode-sk/data.php";
-            break;
-        case "tambah_qrSk":
-            include "../pages/camat/qrcode-sk/add.php";
-            break;
-        case "hapus_qrSk":
-            include "../pages/camat/qrcode-sk/delete.php";
-            break;
-            ## QRCODE REKOMENDASI DISPENSASI NIKAH
-        case "qrCodeRdn":
-            include "../pages/camat/qrcode-rdn/data.php";
-            break;
-        case "tambah_qrRdn":
-            include "../pages/camat/qrcode-rdn/add.php";
-            break;
-        case "hapus_qrRdn":
-            include "../pages/camat/qrcode-rdn/delete.php";
-            break;
+        //    ???????
 
             //////////// END QRCODE PREVIEW ////////////////////
     }
