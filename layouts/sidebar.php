@@ -107,7 +107,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="nav-link text-white " href="?page=data_SOON">
+                            <a class="nav-link text-white " href="?page=data_suratKeluar">
                                 <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                                     <i class="material-icons opacity-10">skip_previous</i>
                                 </div>
