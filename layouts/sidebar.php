@@ -90,6 +90,34 @@
             </div>
             </li>
             <li class="nav-item">
+                <a class="nav-link text-white" href="" data-bs-toggle="collapse" data-bs-target="#data-surat">
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="material-icons opacity-10">drafts</i>
+                    </div>
+                    <span class="nav-link-text ms-1">Data Surat</span>
+                </a>
+                <div class="collapse" id="data-surat">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li>
+                            <a class="nav-link text-white " href="?page=data_suratMasuk">
+                                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                                    <i class="material-icons opacity-10">skip_next</i>
+                                </div>
+                                <span class="nav-link-text ms-1">Surat Masuk</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link text-white " href="?page=data_SOON">
+                                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                                    <i class="material-icons opacity-10">skip_previous</i>
+                                </div>
+                                <span class="nav-link-text ms-1">Surat Keluar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link text-white" href="" data-bs-toggle="collapse" data-bs-target="#data-pelayanan">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">announcement</i>

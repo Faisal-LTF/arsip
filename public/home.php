@@ -101,6 +101,19 @@ if (!isset($_SESSION['nama'])) {
             break;
 "../pages/admin/surat-perjalanan-dinas/delete.php";
             break;
+
+            // SURAT MASUK
+        case "data_suratMasuk";
+        include "../pages/admin/surat-masuk/data.php";
+        break;
+    case "tambah_suratMasuk";
+        include "../pages/admin/surat-masuk/add.php";
+        break;
+    case "edit_suratMasuk";
+        include "../pages/admin/surat-masuk/edit.php";
+        break;
+    case "hapus_suratMasuk";
+        include "../pages/admin/surat-masuk/delete.php";
             //////////////////////////////////////////////////////////////////////// END ADMIN PAGE -----------
 
 
